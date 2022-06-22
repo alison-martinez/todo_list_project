@@ -1,7 +1,12 @@
 source "https://rubygems.org"
 
-gem "sinatra", "~>1.4.7"
+ruby "2.5.0"
+gem "sinatra"
 gem "sinatra-contrib"
 gem "erubis"
 
 gem "pg"
+
+group :production do
+  gem "puma"
+end
